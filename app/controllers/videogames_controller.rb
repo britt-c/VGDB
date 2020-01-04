@@ -1,7 +1,7 @@
 class VideogamesController < ApplicationController
   
   def index
-    @videogames = Videogame.all.order(id: :desc)
+   #@videogames = Videogame.all.order(id: :desc)
   end
   
   def new
