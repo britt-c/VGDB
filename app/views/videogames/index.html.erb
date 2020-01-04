@@ -1,1 +1,12 @@
-<h1>Index</h1>
+<h1>All Games</h1>
+
+<% @videogames.each do |videogame| %>
+  <p>
+    <%= videogame.body %>
+    -
+    <%= link_to("edit", edit_videogame_path(videogame.id)) %>
+    -
+    <%= link_to("delete", videogame_path(videogame.id), method: :delete, data: {confirm: "Are you sure you want to do this?1!?!?!?!!!?!?!"})%>
+  </p>
+<% end %>
+
